@@ -1,0 +1,39 @@
+{
+  "name": "fastify-auth-postgres-ts",
+  "version": "1.0.0",
+  "description": "Fastify API with JWT authentication and PostgreSQL (TypeScript)",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon --exec ts-node src/server.ts",
+    "dev:watch": "nodemon --watch src --ext ts --exec ts-node src/server.ts"
+  },
+  "keywords": [
+    "fastify",
+    "jwt",
+    "postgres",
+    "authentication",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^11.1.0",
+    "@fastify/jwt": "^10.0.0",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.2",
+    "fastify": "^5.6.1",
+    "fastify-plugin": "^5.1.0",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/node": "^24.5.2",
+    "@types/pg": "^8.15.5",
+    "nodemon": "^3.1.10",
+    "pino-pretty": "^13.1.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
